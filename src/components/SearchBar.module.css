@@ -1,0 +1,52 @@
+/* src/components/SearchBar.module.css */
+
+.form {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.input {
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+  width: 250px;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.input:focus {
+  box-shadow: 0 0 10px #66a6ff;
+}
+
+.button {
+  background: #ffffffaa;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0669ff;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background: #66a6ff;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(102, 166, 255, 0.6);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
